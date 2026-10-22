@@ -45,7 +45,8 @@ jobs:
         working-directory: android
         run: |
           echo "sdk.dir=$ANDROID_HOME" > local.properties
-
+          echo "DEBUG_PREMIUM=true" >> local.properties
+          
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
